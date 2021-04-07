@@ -42,7 +42,6 @@ namespace _2._1._1
             }
         }
 
-
         public string Concatenation(CustomString str)
         {
             StringBuilder resultString = new StringBuilder();
@@ -74,7 +73,7 @@ namespace _2._1._1
         public override string ToString()
         {
             string str = "";
-            for (int i = 0; i < Length(); ++i)
+            for (int i = 0; i < Length(); i++)
             {
                 str += chars[i];
             }
@@ -84,12 +83,13 @@ namespace _2._1._1
         public CustomString Reverse()
         {
             char[] res = new char[Length()];
-            for(int i = 0; i<Length() -1; i++)
+            for(int i = 0; i < Length() -1; i++)
             {
                 res[i] = chars[Length()-i ];
             }
             return new CustomString(res);
         }
+
         public char this[int index]
         {
             get
