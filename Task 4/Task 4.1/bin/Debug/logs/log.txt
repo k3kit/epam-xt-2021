@@ -1,0 +1,15 @@
+﻿
+Date: 28.04.2021 14:52:05
+Created: C:\Users\Nikita Berezkin\Documents\epam-xt-2021\Task 4\Task 4.1\bin\Debug\FILE MANAGEMENT SYSTEM\Новый текстовый документ.txt
+
+Date: 28.04.2021 14:52:09
+Rename: Новый текстовый документ.txt to C:\Users\Nikita Berezkin\Documents\epam-xt-2021\Task 4\Task 4.1\bin\Debug\FILE MANAGEMENT SYSTEM\papapa.txt
+
+Date: 28.04.2021 14:52:16
+Changed: C:\Users\Nikita Berezkin\Documents\epam-xt-2021\Task 4\Task 4.1\bin\Debug\FILE MANAGEMENT SYSTEM\papapa.txt
+
+papapap
+Date: 28.04.2021 14:52:16
+Changed: C:\Users\Nikita Berezkin\Documents\epam-xt-2021\Task 4\Task 4.1\bin\Debug\FILE MANAGEMENT SYSTEM\papapa.txt
+
+papapap
