@@ -1,4 +1,4 @@
-function func() {
+function charRemover() {
     const  separators = '.,:;!?';
     let str = "У попа была собака";
     let words;
@@ -21,5 +21,5 @@ function func() {
    console.log(str);
 }
 
-func();
+charRemover();
 
