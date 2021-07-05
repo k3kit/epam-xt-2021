@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2._1._2_ss
+namespace UsersAndAwords.PL.Interface
 {
-    class Class1
+    public interface IUsersAndAwardsPL
     {
+
     }
 }

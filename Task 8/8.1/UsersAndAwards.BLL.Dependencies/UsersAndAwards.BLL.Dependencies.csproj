@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88C4856C-F88D-4BF9-925E-9F256E46D499}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UsersAndAwards.BLL.Dependencies</RootNamespace>
+    <AssemblyName>UsersAndAwards.BLL.Dependencies</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UsersAndAwardsBLLDependencies.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UsersAndAwards.BLL.Interface\UsersAndAwards.BLL.Interface.csproj">
+      <Project>{19a7bd51-6e1e-4700-b7b8-a060ea3b98e6}</Project>
+      <Name>UsersAndAwards.BLL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsersAndAwards.BLL\UsersAndAwards.BLL.csproj">
+      <Project>{3abd5ba3-6815-4561-a6af-20d55d36c796}</Project>
+      <Name>UsersAndAwards.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsersAndAwards.DAL.Dependencies\UsersAndAwards.DAL.Dependencies.csproj">
+      <Project>{ee3e406e-db9e-45df-bab4-acb86ec105be}</Project>
+      <Name>UsersAndAwards.DAL.Dependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsersAndAwards.DAL.Interface\UsersAndAwards.DAL.Interface.csproj">
+      <Project>{964b5191-c5d2-4a3b-8ef7-23a8a857b332}</Project>
+      <Name>UsersAndAwards.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsersAndAwards.DAL\UsersAndAwards.DAL.csproj">
+      <Project>{a79dc01a-75b7-4430-b019-a0e2b3f58df9}</Project>
+      <Name>UsersAndAwards.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
