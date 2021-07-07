@@ -11,6 +11,7 @@ namespace UsersAndAwards.BLL.Interface
     {
         void Add(User user);
 
+        void Edit(User user);
         void Delete(int id);
 
         User GetById(int id);

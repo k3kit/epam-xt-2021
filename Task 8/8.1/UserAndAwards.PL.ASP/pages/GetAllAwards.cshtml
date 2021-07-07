@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+@using UsersAndAwards.BLL.Dependencies
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Show Awards</title>
+</head>
+<body>
+    <div>
+        ID | Title
+
+        @{
+
+
+            var _userBLL = UsersAndAwardsBLLDependencies.UserLogic;
+            var _awardBLL = UsersAndAwardsBLLDependencies.AwardLogic;
+
+            foreach (var award in _awardBLL.GetAll())
+            {
+                <div>
+                    @award
+                </div>
+            }
+
+        }
+    </div>
+</body>
+</html>

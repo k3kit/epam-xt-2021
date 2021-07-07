@@ -14,7 +14,7 @@ namespace UsersAndAwards.BLL
     {
         private readonly IUserDAO _userDAL;
 
-        public UserBLL()
+        public UserBLL() 
         {
             _userDAL = UsersAndAwardsDALDependencies.UserDAO;
         }
@@ -31,6 +31,12 @@ namespace UsersAndAwards.BLL
             _userDAL.SaveUserStorage();
         }
 
+        public void Edit(User user)
+        {
+            _userDAL.Edit(user);
+            _userDAL.SaveUserStorage();
+        }
+
         public IEnumerable<User> GetAll()
         {
             return _userDAL.GetAllUsers();
@@ -40,6 +46,6 @@ namespace UsersAndAwards.BLL
         {
             return _userDAL.GetById(id);
         }
-
+       
     }
 }

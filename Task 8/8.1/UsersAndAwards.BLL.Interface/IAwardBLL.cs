@@ -10,7 +10,7 @@ namespace UsersAndAwards.BLL.Interface
     public interface IAwardBLL
     {
         void Add(Award award);
-
+        void Edit(Award award);
         void Delete(int id);
 
         Award GetById(int id);

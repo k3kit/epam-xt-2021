@@ -6,6 +6,7 @@ namespace UsersAndAwards.DAL
     public interface IAwardDAO
     {
         void Add(Award award);
+        void Edit(Award award);
 
         bool Delete(int id);
 

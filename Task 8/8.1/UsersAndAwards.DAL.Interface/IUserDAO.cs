@@ -7,6 +7,7 @@ namespace UsersAndAwards.DAL
     {
         void Add(User user);
 
+        void Edit(User user);
         bool Delete(int id);
 
         User GetById(int id);
